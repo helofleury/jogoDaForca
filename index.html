@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Forca</title>
+</head>
+<body>
+    <div class="caixa">
+    <h1>Jogo da Forca</h1>
+    <div id="palavra-container">
+        <!-- Aqui será exibida a palavra com as letras adivinhadas e espaços -->
+    </div>
+    
+    <div id="tentativas-container">
+        <p>Tentativas Restantes: <span id="tentativas">6</span></p>
+    </div>
+
+    <div id="letras-usadas-container">
+        <p>Letras Usadas: <span id="letras-usadas"></span></p>
+    </div>
+
+    <div id="entrada-container">
+        <label for="letra">Digite uma letra:</label>
+        <input type="text" id="letra" maxlength="1">
+        <br>
+        <button onclick="verificarLetra()">Verificar</button>
+    </div>
+</div>
+
+<footer>
+    <p class="copyright">Desenvolvido por &copy; Heloísa Fleury</p>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
